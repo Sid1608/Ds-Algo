@@ -31,7 +31,7 @@ public:
         root=new TrieNode();
     }
     
-    void insert(string word) {
+    void insert(string word) {//time complexity: O(len)
         TrieNode* node=root;
         for(int i=0;i<word.size();i++){
             if(!node->containsKey(word[i])){
@@ -42,7 +42,7 @@ public:
         node->setEnd();
     }
     
-    bool search(string word) {
+    bool search(string word) {//time complexity: O(len)
         TrieNode* node=root;
         for(int i=0;i<word.size();i++){
             if(!node->containsKey(word[i])){
@@ -53,7 +53,7 @@ public:
         return node->getEnd();
     }
     
-    bool startsWith(string prefix) {
+    bool startsWith(string prefix) {//time complexity: O(len)
         TrieNode* node=root;
         for(int i=0;i<prefix.size();i++){
             if(!node->containsKey(prefix[i])){
