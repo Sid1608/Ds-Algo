@@ -87,7 +87,7 @@ void solve(){
    
 }
 ```
-## Subarray Removal(Difficulty Rating:1505)
+## [Subarray Removal](https://www.youtube.com/watch?v=Ait-waohfqc)(Difficulty Rating:1505)
 ``` cpp
 void solve(){
    int n;
